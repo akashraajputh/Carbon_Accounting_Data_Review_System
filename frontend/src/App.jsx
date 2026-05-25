@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:8001/api";
+const API_BASE = import.meta.env.VITE_API_BASE || "https://carbon-accounting-data-review-system-4.onrender.com//api";
 const SOURCES = [
   { slug: "sap", label: "SAP fuel & procurement" },
   { slug: "utility", label: "Utility electricity" },
