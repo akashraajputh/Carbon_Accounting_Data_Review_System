@@ -5,7 +5,7 @@ services:
     plan: free
     branch: main
     buildCommand: pip install -r backend/requirements.txt
-    startCommand: cd backend && gunicorn project.wsgi --bind 0.0.0.0:$PORT
+    startCommand: bash start-backend.sh
     envVars:
       - key: DJANGO_SECRET_KEY
         value: "unsafe-local-secret"
