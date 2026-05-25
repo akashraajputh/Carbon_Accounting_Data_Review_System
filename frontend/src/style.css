@@ -1,0 +1,116 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, sans-serif;
+  background: #f4f7fb;
+  color: #111827;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+.app-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+header h1 {
+  margin: 0 0 8px;
+}
+header p {
+  margin: 0 0 24px;
+  color: #475569;
+}
+.controls,
+.upload-panel,
+.review-panel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+.controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.controls label,
+.upload-panel form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.controls select,
+.upload-panel input[type="file"] {
+  width: 100%;
+}
+.checkbox-label {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+.upload-panel form {
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.upload-panel button,
+.actions button {
+  background: #2563eb;
+  border: none;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.upload-status {
+  color: #334155;
+  font-size: 0.95rem;
+}
+.summary {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 12px;
+  color: #334155;
+}
+.records-table {
+  display: grid;
+  gap: 12px;
+}
+.table-header,
+.table-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr 1fr 1.2fr;
+  gap: 12px;
+  align-items: center;
+}
+.table-header {
+  font-weight: 700;
+  color: #0f172a;
+}
+.table-row {
+  padding: 14px 12px;
+  border-radius: 14px;
+  background: #f8fafc;
+}
+.table-row.flagged {
+  border-left: 4px solid #f97316;
+}
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.flagged-note {
+  grid-column: 1 / -1;
+  color: #7c2d12;
+  font-size: 0.95rem;
+}
+@media (max-width: 940px) {
+  .table-header,
+  .table-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .actions {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,4 @@
+Meter ID,Service Address,Bill Start Date,Bill End Date,Usage (kWh),Amount,Rate Class
+EL-1001,Plant 1,2025-03-02,2025-04-01,11250,1520,Commercial
+EL-1002,Plant 2,2025-02-15,2025-03-17,9800,1325,Commercial
+EL-1003,Headquarters,2025-04-01,2025-05-05,13120,1840,Peak

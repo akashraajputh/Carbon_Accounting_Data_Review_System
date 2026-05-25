@@ -1,0 +1,4 @@
+Document Number,Posting Date,Plant,Material,Short Text,Quantity,Unit,Vendor,CO2-Factor kg/ME,Emissions,Amount
+45000123,2025-02-14,PL01,Diesel A,Fuel diesel delivery,1200,Liter,SAP Fuel Co,2.68,3216,1800
+45000124,14.03.2025,PL01,Office Supplies,Printer paper order,500,Kg,Office Goods Ltd,, ,380
+45000125,03/25/2025,PL02,Diesel B,Fleet fuel refill,300,Gallon,Energy Partners,2.68,3047,900

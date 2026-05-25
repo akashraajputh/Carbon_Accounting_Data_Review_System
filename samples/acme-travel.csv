@@ -1,0 +1,4 @@
+Expense Type,Trip Start Date,Trip End Date,Origin,Destination,Distance (mi),Amount,Currency,Traveler
+Flight,2025-03-10,2025-03-10,JFK,LAX,2475,870,USD,Alice Johnson
+Hotel,2025-03-10,2025-03-14,Los Angeles,Los Angeles,,1125,USD,Alice Johnson
+Ground Transport,2025-03-14,2025-03-14,LAX,Downtown,18,45,USD,Alice Johnson
