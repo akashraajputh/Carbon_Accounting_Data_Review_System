@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: carbon-review-backend
+    env: python
+    plan: free
+    branch: main
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: gunicorn project.wsgi --bind 0.0.0.0:$PORT
+    envVars:
+      - key: DJANGO_SECRET_KEY
+        value: "unsafe-local-secret"
+      - key: DEBUG
+        value: "0"
+    autoDeploy: true
