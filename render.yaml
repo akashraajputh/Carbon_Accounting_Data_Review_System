@@ -12,3 +12,15 @@ services:
       - key: DEBUG
         value: "0"
     autoDeploy: true
+
+  - type: static
+    name: carbon-review-frontend
+    env: node
+    plan: free
+    branch: main
+    buildCommand: cd frontend && npm install && npm run build
+    publishPath: frontend/dist
+    envVars:
+      - key: VITE_API_BASE
+        value: "https://<your-backend-render-url>/api"
+    autoDeploy: true
