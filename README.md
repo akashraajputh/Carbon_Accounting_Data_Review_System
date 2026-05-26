@@ -70,7 +70,7 @@ This repository contains a Django REST backend and a React frontend for ingestin
 1. Deploy the `frontend` directory as a separate Vercel project.
 2. Ensure Vercel uses `npm install` and `npm run build` in the `frontend` folder.
 3. Add an environment variable in Vercel:
-   - `VITE_API_BASE`: `https://<your-render-backend-url>/api`
+   - `VITE_API_BASE`: `https://carbon-accounting-data-review-system-9.onrender.com/api`
 
 ### Notes
 
