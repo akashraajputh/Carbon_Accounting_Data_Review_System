@@ -54,9 +54,12 @@ This repository contains a Django REST backend and a React frontend for ingestin
    pip install -r backend/requirements.txt
    ```
 3. Set the start command to:
+
+
    ```bash
-   gunicorn project.wsgi --bind 0.0.0.0:$PORT
+   bash start-backend.sh
    ```
+   This script runs Django migrations before launching Gunicorn.
 4. Add environment variables:
    - `DJANGO_SECRET_KEY`: a secure secret value
    - `DEBUG`: `0`
